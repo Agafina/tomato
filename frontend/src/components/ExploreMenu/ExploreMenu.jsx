@@ -1,11 +1,12 @@
 import React from "react";
 import "./ExploreMenu.css";
 import { menu_list } from "../../assets/assets";
+
 const ExploreMenu = ({ category, setCategory }) => {
   const handleClick = (item) => {
     setCategory((prev) => (prev === item.menu_name ? "All" : item.menu_name));
   };
-  console.log(category);
+
   return (
     <div className="explore-menu">
       <h1>Explore Our Menu</h1>
