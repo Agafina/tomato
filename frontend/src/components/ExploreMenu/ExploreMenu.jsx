@@ -8,7 +8,7 @@ const ExploreMenu = ({ category, setCategory }) => {
   };
 
   return (
-    <div className="explore-menu">
+    <div className="explore-menu" id="explore-menu">
       <h1>Explore Our Menu</h1>
       <p className="explore-menu-text">
         Choose from a diverse menu featuring arrays of dishes. Our mission is to
