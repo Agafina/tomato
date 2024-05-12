@@ -27,20 +27,20 @@ const PlaceOrder = () => {
         <div className="cart-total">
           <h2>Cart Total</h2>
           <div className="">
-            <div className="cart-total-details">
+          <div className="cart-total-details">
               <p>Subtotal</p>
               <p>${getTotalCartAmount()}</p>
             </div>
             <hr />
             <div className="cart-total-details">
               <p>Delivery fee</p>
-              <p>${getTotalCartAmount() + 2}</p>
+              <p>${getTotalCartAmount() === 0 ? 0 : 2}</p>
             </div>
             <hr />
             <div className="cart-total-details">
               <b>Total</b>
-              <b>${getTotalCartAmount()}</b>
-            </div>
+              <b>${getTotalCartAmount() === 0 ? 0 :  getTotalCartAmount()}</b>
+            </div> 
           </div>
           <button>PROCEES TO PAYMENT</button>
         </div>
